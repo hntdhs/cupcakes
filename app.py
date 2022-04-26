@@ -12,6 +12,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = "secret"
 
 connect_db(app)
+db.create_all()
 
 
 @app.route("/")
